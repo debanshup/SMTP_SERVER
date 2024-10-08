@@ -42,7 +42,7 @@ const server = new SMTPServer({
 });
 
 // Step 8: Start SMTP server
-server.listen(1025, () => {
+server.listen(1024, () => {
   console.log('SMTP Server is running on port 1024');
 });
 
