@@ -1,0 +1,10 @@
+From: test@myapp.com
+To: one@mail.com
+Subject: Email verification
+Message-ID: <19c1f152-75db-cd64-ebf8-754066614b91@myapp.com>
+Content-Transfer-Encoding: 7bit
+Date: Thu, 24 Oct 2024 14:25:05 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+This is a demo email. Do not reply back
