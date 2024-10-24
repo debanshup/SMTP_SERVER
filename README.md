@@ -50,18 +50,17 @@ This project implements a **simple SMTP server** for sending and receiving email
     - Use any email client or a script to send an email to the server.
     - Example using `nodemailer`:
       ```javascript
-      const nodemailer = require('nodemailer');
+        const nodemailer = require('nodemailer');
+        const transporter = nodemailer.createTransport({
 
-           const transporter = nodemailer.createTransport({
-
-      host: "localhost",
-      port: 1025,
-      secure: false, // Disable SSL for local server
-      tls: {
-      rejectUnauthorized: false, // Allow self-signed certificates
-      },
-      ignoreTLS: true,
-      });
+                host: "localhost",
+                port: 1025,
+                secure: false, // Disable SSL for local server
+                tls: {
+                rejectUnauthorized: false, // Allow self-signed certificates
+                },
+                ignoreTLS: true,
+                });
 
            transporter.sendMail({
              from: 'sender@example.com',
@@ -74,7 +73,7 @@ This project implements a **simple SMTP server** for sending and receiving email
              }
              console.log('Message sent: %s', info.messageId);
            });
-           ```
+    ```
 
 ## Configuration
 
