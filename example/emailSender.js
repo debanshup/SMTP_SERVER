@@ -16,7 +16,7 @@ export async function sendEmail(email) {
       from: "test@myapp.com",
       to: email,
       subject: "Email verification",
-      text: `This is a demo email. Do not reply back`,
+      text: `This is a test email. Do not reply back`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
